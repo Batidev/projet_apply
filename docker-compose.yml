@@ -1,0 +1,9 @@
+version: "3.7"
+services: 
+  mongo-jd:
+    build: .
+    image: mongo-jd:latest
+    ports:
+        - "27017:27017"
+    volumes:
+        - /Documents/projet_appli/appliJobDating/src/data/:/home/app/data/
